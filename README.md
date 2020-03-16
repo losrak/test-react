@@ -1,3 +1,21 @@
+### Description
+
+Se realizó la creación de varios componentes:
+  Chart
+  login
+  Home
+  Transfer
+  NavBar
+
+-  Chart es un componente reutilizable que se usa tanto en Home como en transfer obteniendo datos de App.js donde se concentran todos los datos en el state de este componente
+
+- Login contiene el formulario de acceso y todos sus metodos necesarios para validar usuario y contraseña, una vez que se han verificado los datos actualiza el username que se encuentra en el state de App.js y actualiza el estado del menú activo.
+
+- Home muestra el panel de acceso con tres bloques, para mostrar el chart pie manda a ejecutar el componente Chart pasando los datos que contiene en las props. Además genera una tabla con los datos de balance que vienen de App.js
+
+- Transfer muestra un formulario para realizar transferencias, una chart pie y dos tablas que muestran las transferencias por cuenta origen. Mediante props se obtienen los datos para llamar el componente Chart.js y poder crear las tablas y llenar el formulario. El formulario hace las validaciones en el mismo componente y va actualizando las transactions y balance definidas en el state de App.js así que cada vez que en el formulario se haga un movimiento valido se graba en el state de App.js para que se actualicen los componentes con los nuevos datos.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
