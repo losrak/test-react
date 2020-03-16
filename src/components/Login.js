@@ -83,7 +83,7 @@ class Login extends Component {
 
   render() {
     if(this.props.estadoC){
-      return (<div>
+      return (<div className="container">
 
         <div className="viewport-height d-flex flex-row justify-content-center align-items-center">
             <div className="col-6 text-center card">
