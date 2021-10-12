@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import balance from '../service/balance.json';
+// import balance from '../service/balance.json';
 
 class NavBar extends Component {
 
